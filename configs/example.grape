@@ -1,0 +1,9 @@
+[Config]
+groupId=dev.volix.lib.grape
+artifactId=grape-example
+version=0.1.0
+stage=none
+
+[Dependencies]
+# tv.rewinside;frames;0.1.0
+tv.rewinside;java-config;0.7.2
