@@ -64,7 +64,7 @@ Grape.getInstance().register(YourService.class, service);
 After that other systems can access registered services via:
 
 ```java
-instance.get(YourService.class).thenAccept(new Consumer<YourService>() {
+Grape.getInstance().get(YourService.class).thenAccept(new Consumer<YourService>() {
     @Override
     public void accept(YourService service) {
         // do something
