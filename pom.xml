@@ -12,6 +12,7 @@
   <modules>
     <module>grape-api</module>
     <module>grape-plain</module>
+      <module>grape-spigot</module>
   </modules>
 
   <properties>

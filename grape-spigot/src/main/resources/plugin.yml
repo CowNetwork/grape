@@ -1,0 +1,4 @@
+name: Grape
+version: ${project.version}
+author: ${project.organization.name}
+main: network.cow.grape.spigot.GrapePlugin
