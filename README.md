@@ -2,7 +2,7 @@
 
 > Dependency bundling and service management system
 
-![](.gitlab/assets/header.png)
+![](.github/assets/header.png)
 
 # Requirements
 
@@ -12,7 +12,7 @@
 
 # Building process
 
-![](.gitlab/assets/building_process.png)
+![](.github/assets/building_process.png)
 
 The building script (`build.py`) takes in a path to a config file and a path to a template project. The full usage looks like this:
 
@@ -28,7 +28,7 @@ Each dependency bundle is represented with one single **.grape** file. This file
 
 ```
 [Config]
-groupId=dev.volix.lib.grape
+groupId=network.cow.grape
 artifactId=grape-lobby
 version=0.1.0
 stage=none
@@ -47,27 +47,28 @@ Comments can be made with `#` in front of the line.
 If you want to use service management part of Grape, you can just add following dependency:
 
 ```xml
+
 <dependency>
-  <groupId>dev.volix.lib</groupId>
-  <artifactId>grape-api</artifactId>
-  <version>[0.0,)</version>
+    <groupId>network.cow.grape</groupId>
+    <artifactId>grape-api</artifactId>
+    <version>[0.0,)</version>
 </dependency>
 ```
 
 And then start registering your own `Service` with:
- 
+
 ```java
-YourService service = new YourService();
-Grape.getInstance().register(YourService.class, service);
+YourService service=new YourService();
+		Grape.getInstance().register(YourService.class,service);
 ```
 
 After that other systems can access registered services via:
 
 ```java
-Grape.getInstance().get(YourService.class).thenAccept(new Consumer<YourService>() {
-    @Override
-    public void accept(YourService service) {
-        // do something
-    }
-});
+Grape.getInstance().get(YourService.class).thenAccept(new Consumer<YourService>(){
+@Override
+public void accept(YourService service){
+		// do something
+		}
+		});
 ```
