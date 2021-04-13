@@ -18,4 +18,12 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven.compiler.source>1.8</maven.compiler.source>
   </properties>
+
+  <distributionManagement>
+    <repository>
+      <id>cow</id>
+      <name>Cow Network Packages</name>
+      <url>https://maven.cow.network/releases</url>
+    </repository>
+  </distributionManagement>
 </project>
