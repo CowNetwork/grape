@@ -9,6 +9,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
+  <groupId>network.cow.grape</groupId>
   <artifactId>grape-spigot</artifactId>
 
   <properties>
