@@ -9,6 +9,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
+  <groupId>network.cow.grape</groupId>
   <artifactId>grape-plain</artifactId>
   <packaging>pom</packaging>
   <version>0.3.0</version>
