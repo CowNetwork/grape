@@ -3,8 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
+    <groupId>network.cow</groupId>
     <artifactId>grape</artifactId>
-    <groupId>dev.volix.lib</groupId>
     <version>0.3.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -15,7 +15,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>dev.volix.lib</groupId>
+      <groupId>network.cow</groupId>
       <artifactId>grape-api</artifactId>
       <version>0.3.0</version>
       <scope>compile</scope>

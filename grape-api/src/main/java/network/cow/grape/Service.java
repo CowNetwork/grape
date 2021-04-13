@@ -1,4 +1,4 @@
-package dev.volix.lib.grape;
+package network.cow.grape;
 
 /**
  * This interface is only used to identify a service.
