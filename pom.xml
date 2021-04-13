@@ -12,8 +12,19 @@
   <modules>
     <module>grape-api</module>
     <module>grape-plain</module>
-      <module>grape-spigot</module>
+    <module>grape-spigot</module>
   </modules>
+
+  <repositories>
+    <repository>
+      <id>cow-releases</id>
+      <url>https://maven.cow.network/releases</url>
+    </repository>
+    <repository>
+      <id>cow</id>
+      <url>https://maven.cow.network/internal</url>
+    </repository>
+  </repositories>
 
   <properties>
     <maven.compiler.target>1.8</maven.compiler.target>
